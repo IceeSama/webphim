@@ -8,17 +8,15 @@
     position: relative;
 }
 
-.header .header-img  {
+.header-img {
     height: 105%;
     width: 105%;
-    background-image: url(https://chieuphimquocgia.com.vn/_next/image?url=http%3A%2F%2Fapiv2.chieuphimquocgia.com.vn%2FContent%2FImages%2F0017487_0.jpg&w=1920&q=75);
     background-size: 100%;
     background-position: center;       
     position: absolute;
     z-index: -1;
-    filter: blur(5px);
+    filter: blur(1px);
 }
-
 
 .header__navbar {
     display: flex;
@@ -73,7 +71,6 @@
     width: 232px;
     height: 333px;
     margin-top: 20px;
-    background-image: url(https://chieuphimquocgia.com.vn/_next/image?url=http%3A%2F%2Fapiv2.chieuphimquocgia.com.vn%2FContent%2FImages%2F0017487_0.jpg&w=1920&q=75);
     background-size: cover;
     border-radius: 15px;
 }
@@ -215,6 +212,7 @@
     border: 1px solid rgb(255,255,255);
     display: flex;
     margin:0px 10px 0px 10px ;
+    background-color: rgb(16,20,27);
 }
 
 .container__navbar3-timeselect-text {
@@ -224,9 +222,6 @@
     margin: auto;
 }
 
-.container__navbar3-timeselect:active .modal__content {
-    opacity: 1;
-}
 
 .container__navbar3-timeselect:hover {
     background-color: rgba(61,83,107,0.5);
@@ -266,21 +261,15 @@
     justify-content: center;
     flex-direction: column;  
 }
-.modal{
+#modal{
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    display: flex;
+    display: none;
 }
 
-.modal__overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);  
-}
 
 .modal__content {
     width: 600px;
@@ -293,6 +282,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 
 .row {
@@ -333,5 +323,16 @@
     font-size: 1.6rem ;
     color: var(--orange-color);
     transform: translateX(-100%) translateY(25px);
+}
+.hidden {
+    display: none;
+} 
+.close-button {
+    font-size: 1.6rem;
+    transform: translateX(270px) translateY(10px);   
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    color: var(--orange-color);
 }
 
